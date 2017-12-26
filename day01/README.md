@@ -36,5 +36,5 @@ var observable = Rx.Observable.create(function subscribe(observer) {
 
 ###### 清理
 `observable.subscribe().unsubscribe()`
-可以在`subscribe()`定义具体清理的执行
+可以在`subscribe()`定义具体清理的执行, 参见unsub.js
 
