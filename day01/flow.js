@@ -1,7 +1,6 @@
 const Rx = require('rxjs/Rx');
 
 const observable = Rx.Observable.create(function (observer) {
-  //console.log(observer);
   observer.next(1);
   observer.next(2);
   observer.next(3);
@@ -17,4 +16,5 @@ observable.subscribe({
   error: err => console.error('something wrong occurred: ' + err),
   complete: () => console.log('done'),
 });
+
 console.log('> just after subscribe');
