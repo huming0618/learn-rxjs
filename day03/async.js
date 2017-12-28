@@ -17,3 +17,11 @@ subject.subscribe({
 
 subject.next(5);
 subject.complete();
+
+subject.subscribe({
+  next: (v) => console.log('observerX: ' + v)
+});
+
+subject.subscribe({
+  next: (v) => console.log('observerY: ' + v)
+});
